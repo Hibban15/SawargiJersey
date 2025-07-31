@@ -1,3 +1,4 @@
+
 /* NAVBAR */
     nav {
       position: fixed;
@@ -120,24 +121,25 @@
       height: 70px;
     }
 
-    /* baju */
     h1 {
       text-align: center;
       color: #333;
       margin-top: 5rem;
-      font-family: "Roboto", sans-serif;
-      font-optical-sizing: auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
       font-weight: 500;
-      font-style: normal;
-      font-variation-settings: "wdth" 100;
+      font-size: 18px;
     }
 
     .produk-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 30px auto;
+      padding: 0 1rem;
     }
 
     .produk-card {
@@ -146,32 +148,23 @@
       padding: 16px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .produk-card:hover {
+      transform: translateY(-5px);
     }
 
     .produk-card img {
       width: 100%;
+      height: auto;
       border-radius: 10px;
       margin-bottom: 12px;
     }
 
     .produk-card h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
       color: #333;
-      font-family: "Roboto", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 500;
-      font-style: normal;
-      font-variation-settings: "wdth" 100;
-    }
-
-    .produk-card select {
-      padding: 8px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      width: 100%;
-      border-radius: 6px;
-      border: 1px solid #ccc;
+      margin: 8px 0;
     }
 
     .produk-card button {
@@ -183,10 +176,27 @@
       border-radius: 6px;
       font-size: 16px;
       cursor: pointer;
+      transition: background 0.3s;
     }
 
     .produk-card button:hover {
       background: #218838;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      .produk-card button {
+        font-size: 14px;
+        padding: 8px;
+      }
     }
 
 
